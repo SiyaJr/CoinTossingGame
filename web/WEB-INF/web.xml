@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>tut.ac.za.web.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StartSessionServlet</servlet-name>
+        <servlet-class>tut.ac.za.web.StartSessionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CoinTossingServlet</servlet-name>
+        <servlet-class>tut.ac.za.web.CoinTossingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuessServlet</servlet-name>
+        <servlet-class>tut.ac.za.web.GuessServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndSessionServlet</servlet-name>
+        <servlet-class>tut.ac.za.web.EndSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StartSessionServlet</servlet-name>
+        <url-pattern>/StartSessionServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CoinTossingServlet</servlet-name>
+        <url-pattern>/CoinTossingServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuessServlet</servlet-name>
+        <url-pattern>/GuessServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndSessionServlet</servlet-name>
+        <url-pattern>/EndSessionServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <context-param>
+        
+        <param-name>computer_name</param-name>
+        <param-value>Siri</param-value>
+    </context-param>
+    <context-param>
+        
+        <param-name>valid_username</param-name>
+        <param-value>user</param-value>
+    </context-param>
+    <context-param>
+        
+        <param-name>valid_password</param-name>
+        <param-value>123</param-value>
+    </context-param>
+</web-app>
